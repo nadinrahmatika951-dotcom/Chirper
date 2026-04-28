@@ -12,8 +12,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js']) 
 </head>
 
-<body class="min-h-screen flex flex-col bg-base-200 font-sans">
-    <nav class="navbar bg-base-100">
+<body class="min-h-screen flex flex-col bg-yellow-200 font-sans">
+    <nav class="navbar bg-red-300">
         <div class="navbar-start">
             <a href="/" class="btn btn-ghost text-xl">🐦Chirper</a>
         </div>
@@ -25,7 +25,7 @@
 
     <main class="flex-1 container mx-auto px-4 py-8">
         <div class="max-w-2xl mx-auto">
-            <div class="card bg-base-100 shadow mt-8">
+            <div class="card bg-red-200 shadow mt-8">
                 <div class="card-body">
                     <div>
                         <h1 class="text-3xl font-bold">Welcome to Chirper!</h1>
@@ -38,7 +38,7 @@ Time to make it
         </div>
     </main>
 
-    <footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
+    <footer class="footer footer-center p-5 bg-red-300 text-base-content text-xs">
         <div>
             <p>© 2026 Chirper - built with Laravel and 💗 by Nadin Rahmatika Piliang (240170079)</p>
         </div>

@@ -25,5 +25,13 @@
     "license": "ISC",
     "dependencies": {
         "express": "^5.2.1"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nadinrahmatika951-dotcom/Chirper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nadinrahmatika951-dotcom/Chirper/issues"
+    },
+    "homepage": "https://github.com/nadinrahmatika951-dotcom/Chirper#readme"
 }
