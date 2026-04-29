@@ -23,7 +23,7 @@ class ChirpController extends Controller
                 'author' => 'Nanda Praditya',
                 'message' => 'Working on something cool with Chirper...',
                 'time' => '3 hours ago'
-            ]
+            ],
         ];
         return view('welcome', ['chirps' => $chirps]);
     }
