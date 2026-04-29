@@ -6,25 +6,26 @@ use Illuminate\Http\Request;
 
 class ChirpController extends Controller
 {
-    public function index ()
+    public function index()
     {
         $chirps = [
             [
-                'author' => 'Rara',
+                'author' => 'Nanda Adiski',
                 'message' => 'Just deployed my first Laravel app! 🚀',
                 'time' => '5 minutes ago'
             ],
             [
-                'author'=> 'Rio Armanda',
-                'message' => 'Laravel makes web development fun again!',
+                'author' => 'Aira Wulandari',
+                'message' => 'Laravel makes development so much fun again!',
                 'time' => '1 hour ago'
             ],
             [
-                'author' => 'Nanda Praditya',
-                'message' => 'Working on something cool with Chirper...',
+                'author' => 'Akbar Wardana',
+                'message' => 'Working on something cool with Laravel!',
                 'time' => '3 hours ago'
             ],
         ];
+
         return view('welcome', ['chirps' => $chirps]);
     }
 }
