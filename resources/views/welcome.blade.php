@@ -1,18 +1,16 @@
 <x-layout>
-    <x-slot:title>
-        Welcome
-    </x-slot :title>
-    <div class="max-w-2xl mx-auto">
-        @foreach ($chirps as $chirp)
-            <div class="card shadow-xl mt-8 backdrop-blur-lg bg-[#b8c1ec]/25 rounded-2xl border-2 border-[#121629]">
-                <div class="card-body">
-                    <div>
-                        <div class="font-bold text-[#fffffe] font-['Quicksand']">{{ $chirp['author' ] }}</div>
-                        <div class="mt-1 text-[#b8c1ec] font-['Quicksand']">{{ $chirp['message' ] }}</div>
-                        <div class="mt-2 text-xs text-[#b8c1ec] font-['Quicksand']">{{ $chirp['time' ] }}</div>
+        <x-slot:tittle>
+            Welcome
+        </x-slot:tittle>
+        <div class="max-w-2xl mx-auto">
+            @foreach ($chirps as $chirps )
+                <div class="card bg-base-100 shadow mt-8">
+                    <div class="card-body">
+                        <h2 class="text-xl font-bold">{{ $chirps['author'] }}</h2>
+                        <p class="mt-1">{{ $chirps['message'] }}</p>
+                        <p class="text-sm  text-gray-500 mt-2">{{ $chirps['time'] }}</p>
                     </div>
                 </div>
-            </div>
-        @endforeach
-    </div>
-</x-layout>
+            @endforeach
+        </div>
+    </x-layout>

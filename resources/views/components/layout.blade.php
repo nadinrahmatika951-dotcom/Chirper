@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html lang="en data-theme="lofi">
-
+<html lang="en" data-theme="lofi">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirper - Home</title>
+    <title>{{ isset($title) ? $title . ' - Chirper' : 'Chirper' }}</title>
     <link rel="preconnect" href="<https://fonts.bunny.net>">
-    <link href="https://fonts.bunny.net./css?family=instruemnt-sans:400,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/nmp/daisyui@5/theme.css" rel="stylesheet" type="text/css" />
-    @vite(['resources/css/app.css', 'resources/js/app.js']) 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
-<body class="min-h-screen flex flex-col bg-yellow-200 font-sans">
-    <nav class="navbar bg-red-300">
+<body class="min-h-screen flex flex-col font-sans bg-base-200">
+    <nav class="navbar bg-base-100">
         <div class="navbar-start">
-            <a href="/" class="btn btn-ghost text-xl">🐦Chirper</a>
+            <a href="/" class="btn btn-ghost text-xl">🐦 Chirper</a>
         </div>
         <div class="navbar-end gap-2">
-            <a href="#" class="btn btn-ghost btn-sm">Sign In</a>
+            <a href="#" class="btn btn-ghost btn-sm">Sign In</a> 
             <a href="#" class="btn btn-primary btn-sm">Sign Up</a>
         </div>
     </nav>
 
     <main class="flex-1 container mx-auto px-4 py-8">
-        <div class="max-w-2xl mx-auto">
-            <div class="card bg-red-200 shadow mt-8">
-                <div class="card-body">
-                    <div>
-                        <h1 class="text-3xl font-bold">Welcome to Chirper!</h1>
-                        <p>This is your brand new Laravel app. Time to make it sing (or chirp)!</p>
-                        <p class="mt-2 text-sm text-gray-600">Now this is live on the internet! 🎉</p>
-                    </div>    
-Time to make it                            
-                        sing (or chirp)!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{ $slot }}
     </main>
 
-    <footer class="footer footer-center p-5 bg-red-300 text-base-content text-xs">
+    <footer class="footer footer-center p-5 bg-bs-300 text-base-content text-xs">
         <div>
-            <p>© 2026 Chirper - built with Laravel and 💗 by Nadin Rahmatika Piliang (240170079)</p>
+            <p>© {{ date('Y') }} Chirper - Built with Laravel and 💙 by Nadin Rahmatika Piliang (240170079)</p>
         </div>
     </footer>
-    
 </body>
 </html>

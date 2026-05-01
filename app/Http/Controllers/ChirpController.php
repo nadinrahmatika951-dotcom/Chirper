@@ -6,29 +6,26 @@ use Illuminate\Http\Request;
 
 class ChirpController extends Controller
 {
-    // Method untuk menampilkan halaman welcome dengan data chirps
     public function index()
     {
-        // Data chirps (contoh data sementara)
         $chirps = [
             [
-                'author' => 'Nadin Rahmatika',
-                'message' => 'Hello Chirper! Selamat belajar Laravel! 🐸',
-                'time' => '2026-05-01 10:00:00'
+                'author' => 'Nanda Adiski',
+                'message' => 'Just deployed my first Laravel app! 🚀',
+                'time' => '5 minutes ago'
             ],
             [
-                'author' => 'Admin',
-                'message' => 'Selamat datang di Chirper!',
-                'time' => '2026-05-01 09:30:00'
+                'author' => 'Aira Wulandari',
+                'message' => 'Laravel makes development so much fun again!',
+                'time' => '1 hour ago'
             ],
             [
-                'author' => 'User 1',
-                'message' => 'Aplikasi ini keren banget!',
-                'time' => '2026-05-01 09:00:00'
-            ]
+                'author' => 'Akbar Wardana',
+                'message' => 'Working on something cool with Laravel!',
+                'time' => '3 hours ago'
+            ],
         ];
-        
-        // Kirim data ke view welcome
-        return view('welcome', compact('chirps'));
+
+        return view('welcome', ['chirps' => $chirps]);
     }
 }
