@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen flex flex-col font-sans bg-base-200">
-    <nav class="navbar bg-base-100">
+<body class="min-h-screen flex flex-col font-sans bg-yellow-200">
+    <nav class="navbar bg-red-300">
         <div class="navbar-start">
             <a href="/" class="btn btn-ghost text-xl">🐦 Chirper</a>
         </div>
@@ -25,7 +25,7 @@
         {{ $slot }}
     </main>
 
-    <footer class="footer footer-center p-5 bg-bs-300 text-base-content text-xs">
+    <footer class="footer footer-center p-5 bg-red-300 text-base-content text-xs">
         <div>
             <p>© {{ date('Y') }} Chirper - Built with Laravel and 💙 by Nadin Rahmatika Piliang (240170079)</p>
         </div>
