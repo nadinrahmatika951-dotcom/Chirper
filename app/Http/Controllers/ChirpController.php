@@ -10,17 +10,17 @@ class ChirpController extends Controller
     {
         $chirps = [
             [
-                'author' => 'Nanda Adiski',
+                'author' => 'Rahma Fadillah',
                 'message' => 'Just deployed my first Laravel app! 🚀',
                 'time' => '5 minutes ago'
             ],
             [
-                'author' => 'Aira Wulandari',
+                'author' => 'Endang Nilawati',
                 'message' => 'Laravel makes development so much fun again!',
                 'time' => '1 hour ago'
             ],
             [
-                'author' => 'Akbar Wardana',
+                'author' => 'Nazwa Putri Zahira',
                 'message' => 'Working on something cool with Laravel!',
                 'time' => '3 hours ago'
             ],
